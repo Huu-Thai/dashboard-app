@@ -41,4 +41,4 @@ jobs:
           DB_PASSWORD: 123456?a
           DB_NAME: dashboard-app
           JWT_SECRET: secretKey
-        run: npm test
+        run: npm test:e2e
