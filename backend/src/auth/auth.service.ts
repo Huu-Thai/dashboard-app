@@ -44,6 +44,8 @@ export class AuthService {
     const updatedUser = await this.userRepository.findOne({
       where: { id },
     });
+
+    // const { password, ...user } = updatedUser;
     return updatedUser ? this.transform(updatedUser) : null;
   }
 
