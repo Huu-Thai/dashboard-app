@@ -9,8 +9,8 @@ import { Repository } from 'typeorm';
 const cookieExtractor = (req) => {
   const auth = req.headers['authorization'];
 
-  if (req?.cookies?.Authentication) {
-    return req?.cookies?.Authentication;
+  if (req?.cookies?.token) {
+    return req?.cookies?.token;
   } else if (auth && auth.startsWith('Bearer ')) {
     return auth.slice(7); // remove 'Bearer '
   } else {

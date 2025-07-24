@@ -67,7 +67,7 @@ export class AuthController {
     res: Response,
   ) {
     try {
-      res.setHeader('Set-Cookie', this.authService.getCookieForLogOut());
+      res.clearCookie('token');
       return res.sendStatus(HttpStatus.NO_CONTENT);
     } catch (e) {
       return res.sendStatus(HttpStatus.NO_CONTENT);

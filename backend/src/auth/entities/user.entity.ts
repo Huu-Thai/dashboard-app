@@ -7,6 +7,9 @@ import {
   BeforeInsert,
 } from 'typeorm';
 import * as bcrypt from 'bcrypt';
+import { Expose } from 'class-transformer';
+
+export const securityFieldGroup = ['security'];
 
 @Entity({
   name: 'user',
@@ -22,6 +25,9 @@ export class User extends BaseEntity {
   email: string;
 
   @Column()
+  @Expose({
+    groups: securityFieldGroup,
+  })
   password: string;
 
   @Column({ nullable: true })

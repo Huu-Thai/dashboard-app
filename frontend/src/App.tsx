@@ -39,6 +39,7 @@ const App: React.FC = () => {
       });
       setProfile(response.data);
     } catch (error) {
+      localStorage.removeItem('token');
       message.error('Failed to fetch profile');
     }
   };
