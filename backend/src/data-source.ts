@@ -8,7 +8,6 @@ export const AppDataSource = new DataSource({
   password: process.env.DB_PASSWORD || '123456?a',
   database: process.env.DB_NAME || 'dashboard-app',
   migrationsTransactionMode: 'each',
-  // entities: [__dirname + 'src/**/*.entity.{js,ts}'],
   entities: ['src/auth/**/*.entity.{js,ts}'], // Is correct for generate
   logging: false,
   synchronize: true,

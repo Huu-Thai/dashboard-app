@@ -15,7 +15,7 @@ import { JwtAuthGuard } from './jwt-auth.guard';
     PassportModule,
     JwtModule.registerAsync({
       useFactory: () => ({
-        secret: 'dashboard-app-secret',
+        secret: process.env.JWT_SECRET || 'dashboard-app-secret',
         signOptions: {
           expiresIn: 9000,
         },
