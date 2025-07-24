@@ -1,0 +1,166 @@
+:root {
+  --primary-color: #1890ff;
+  --secondary-color: #52c41a;
+  --text-color: #fff;
+  --text-color-light: #ffffff;
+  --bg-color: #c8c6c6;
+  --card-bg: #ffffff;
+  --border-color: #d9d9d9;
+  --header-bg-color: #bababa30
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.site-layout-background {
+  background: none;
+  box-shadow: none;
+}
+
+.right-background {
+  background: var(--bg-color); 
+}
+
+.user-form {
+  width: 350px;
+  padding: 24px;
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 130px;
+}
+
+.ant-menu-vertical > .profile-item {
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.ant-menu-vertical > .profile-logout > .ant-menu-title-content {
+  font-size: 15px;
+}
+
+.site-layout-header {
+  height: 130px;
+}
+
+.page-content .ant-card-head {
+  background-color: var(--header-bg-color);
+  height: 130px;
+  padding: 0 150px;
+}
+
+.page-content .ant-card-head-title {
+  font-size: 30px;
+}
+
+.page-content .ant-card-body {
+  padding: 0 150px;
+  background-color: var(--card-bg);
+}
+
+.page-content .ant-card-head .ant-tabs-tab {
+  padding: 15px 0;
+}
+
+.page-content .ant-card-head .ant-tabs-tab {
+  padding: 15px 0;
+}
+
+.page-content .ant-card-head .ant-tabs-nav {
+  margin: 0;
+}
+
+.page-content .ant-card-head .ant-tabs-nav .ant-tabs-tab-btn {
+  color: #474752;
+  text-shadow: 0 0 0.25px currentcolor;
+  font-weight: 700;
+}
+
+.page-content input, .page-content .ant-input-outlined, .page-content .ant-input-affix-wrapper input {
+  background: #d7d7d7;
+  border-color: none;
+  line-height: 2;
+  border-radius: 0;
+}
+
+.side-container .ant-layout-sider-children {
+  background: #2e2726;
+  color: var(--text-color);
+  padding: 0 20px;
+}
+
+.side-container .ant-layout-sider-children .ant-layout-header {
+  color: var(--text-color);
+  line-height: initial;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.side-container .avatar {
+  padding-top: 7px;
+}
+
+.side-container .profile-group {
+  border-inline-end: none;
+  background: none;
+}
+
+.side-container .menu-group {
+  border-inline-end: none;
+  background: none;
+  padding: 0;
+}
+
+.side-container .menu-group .ant-menu-item {
+  padding: 0;
+  font-size: 14px;
+}
+
+.side-container .ant-menu .ant-menu-item {
+  background-color: inherit;
+  color: var(--text-color);
+}
+
+.side-container .logo {
+  padding: 20px 0;
+}
+
+.side-container .logo h1 {
+  margin: 0;
+}
+
+.side-container .ant-layout-sider {
+  flex: 0 0 240px;
+  max-width: 240px;
+  min-width: 240px;
+  width: 240px;
+}
+
+.page-content button {
+  width: 250px;
+  border: 0;
+  border-radius: 0;
+}
+
+.login-card {
+  border: none;
+  border-radius: 0;
+}
+
+.user-form .user-form-note .ant-form-item-control-input-content {
+  font-size: 13px;
+}
+.user-form .user-form-note .login-btn-link {
+  color: black;
+  font-weight: 500;
+}
+
+.user-form .user-form-note .login-btn-link:hover {
+  color: #474752;
+}

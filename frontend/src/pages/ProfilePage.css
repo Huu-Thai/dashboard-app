@@ -1,0 +1,26 @@
+.profile-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-form {
+  margin-top: 24px;
+}
+
+.profile-col-left {
+  padding-right: 100px;
+}
+
+.profile-col-right {
+  padding-left: 100px;
+}
+
+.profile-button {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    width: 100%;
+  }
+}
