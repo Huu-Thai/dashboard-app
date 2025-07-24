@@ -77,9 +77,10 @@ const Register: React.FC = () => {
                 name="email"
                 rules={[{ required: true, message: 'Please input your email!' }]}
               >
-                <Input prefix={<UserOutlined />} placeholder="Email" />
+                <Input id="register-email" prefix={<UserOutlined />} placeholder="Email" />
               </Form.Item>
               <Form.Item
+                id="register-password"
                 label="Password"
                 name="password"
                 rules={[
@@ -92,6 +93,7 @@ const Register: React.FC = () => {
                 <Input.Password prefix={<LockOutlined />} placeholder="Password" />
               </Form.Item>
               <Form.Item
+                id="register-password-2"
                 label="Re-Enter Password"
                 name="confirmPassword"
                 dependencies={['password']}

@@ -49,7 +49,7 @@ const Login: React.FC = () => {
                 name="email"
                 rules={[{ required: true, message: 'Enter valid email address!' }]}
               >
-                <Input prefix={<UserOutlined />} placeholder="Email" />
+                <Input id="login-email" prefix={<UserOutlined />} placeholder="Email" />
               </Form.Item>
               <Form.Item
                 label="Password"
@@ -57,6 +57,7 @@ const Login: React.FC = () => {
                 rules={[{ required: true, message: 'Please input your password!' }]}
               >
                 <Input
+                  id="login-password"
                   prefix={<LockOutlined />}
                   type="password"
                   placeholder="Password"
